@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="list">
+      <div class="write-task">
+        <label for="">
+          <input type="text" class="write" id="task-text" />
+          <i class="fa-solid fa-plus" id="add-task"></i>
+        </label>
+        <div></div>
+      </div>
+      <div class="counters">
+        <div>Task <span>0</span></div>
+        <div>Completed <span>0</span></div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div>
+        <i class="fa-solid fa-trash bt-button"></i>
+        <button class="delete-all bg-red">Delete All</button>
+      </div>
+
+      <div >
+        <i class="fa-regular fa-circle bt-button"></i>
+        <button class="toggle bg-green">Complete All</button>
+      </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
