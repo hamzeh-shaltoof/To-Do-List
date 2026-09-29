@@ -3,7 +3,7 @@
   --delete-color: rgb(255, 28, 28);
 }
 .list {
-  width: fit-content;
+  width: 50%;
   margin: 28px auto;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -12,10 +12,12 @@
   background-color: var(--main-color);
   padding: 20px 20px 0 20px;
   height: 80px;
+  width: 100%;
 }
 .list .write-task label {
   display: block;
   position: relative;
+  width: 100%;
 }
 
 .box {
@@ -23,6 +25,7 @@
   display: flex;
   flex-direction: column;
   gap: 17px;
+  width: 100%;
   padding: 20px 15px 20px 15px;
 }
 .write {
@@ -35,6 +38,7 @@
 }
 .write-task input {
   display: block;
+  width: 100% !important;
   margin: auto;
   font-size: 28px;
   border: none;
@@ -150,4 +154,28 @@ button {
 }
 .buttons div:last-child:hover .bg-green {
   background-color: #007b5c;
+}
+
+@media (max-width: 1210px) {
+  .delete-all button,
+  .toggle button {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+    .list{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+    .list .write-task {
+      width: auto;
+    }
+    .box{
+      width: auto;
+    }
+  .buttons {
+    flex-direction: row;
+    position: relative;
+  }
 }
